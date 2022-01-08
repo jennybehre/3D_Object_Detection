@@ -134,6 +134,7 @@ Parts of this project are based on the following repositories:
 
 
 ## Project Writeup
+I used the Udacity workspace to run the code for this repository. To reproduce the results copy the files into the workspace and follow the instruction which is given in the README.md of the project.
 
 ### Step 1
 In step 1 two of the data channels within the range image, which are "range" and "intensity", should be displayed. The following image shows the output from the code.
