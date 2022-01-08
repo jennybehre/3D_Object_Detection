@@ -104,7 +104,7 @@ def show_range_image(frame, lidar_name):
     ri_range_intensity = np.vstack((img_range, img_intensity))
     img_range_intensity = ri_range_intensity.astype(np.uint8)  
     
-    # focus on +/- 45° around the image center
+    # focus on +/- 90° around the image center
     deg90= int(img_range_intensity.shape[1] / 4)
     ri_center = int(img_range_intensity.shape[1]/2)
     img_range_intensity = img_range_intensity[:,ri_center-deg90:ri_center+deg90]
