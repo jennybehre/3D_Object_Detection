@@ -152,5 +152,15 @@ In the next step a birds-eye view (BEV) from the LiDAR pointcloud should be crea
 
 ![image](img/intensity.png) ![image](img/height.png)
 
+### Step 3
+After the implementation of the fpn_resnet model, the 3D bounding boxes from the model response are extracted into metric coordinates in vehicle space. The results are shown below.  
+
+![image](img/labelvsdetected.png)
+
+
+### Step 4
+In the last step the performance of the object detection is evaluated by computing the intersection-over-union between labels and detection and by calculating the precision and recall. The model is producing a precision of 0.95065 and a recall of 0.94444.
+
+![image](img/RecallIou.png)
 
 
