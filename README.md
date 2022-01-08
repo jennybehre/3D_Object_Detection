@@ -141,8 +141,8 @@ In step 1 two of the data channels within the range image, which are "range" and
 
 ![image](img/range.png)
 
-Another task was to visualize the lidar pointcloud from the sequences of the Waymo Open Dataset. As you can see in the images the vehicles have got different degrees of visibility in the pointcloud. Near at the blind spot of the LiDAR the vehicles are very difficult to detect, while vehicles without any occlusions are clearly identified.  
-Nevertheless some vehicle features can be identify as a stable feature on most vehicles. Particularly in the intensity image the rear-bumper and the lights in the front and in the tail of the vehicle can be clearly seen. In the pointcloud the wheels, the rearview mirrors, the windshield and the chassis in general are also stable features to identify a vehicle.  
+Another task was to visualize the lidar pointcloud from the sequences of the Waymo Open Dataset. As you can see in the images the vehicles have different degrees of visibility in the pointcloud. Near the blind spot of the LiDAR the vehicles are very difficult to detect, while vehicles without any occlusions and with a certain minimum distance are clearly identified.  
+Some vehicle features can be identify as a stable feature on most vehicles. Particularly in the intensity image the rear-bumper, the headlights and the taillights of the vehicle can be clearly recognized. In the pointcloud, the wheels, the rearview mirrors, the windshield and the chassis in general are also stable features to identify a vehicle.  
 
 ![image](img/pcl_1.png) ![image](img/pcl_2.png)
 ![image](img/pcl_3.png) ![image](img/pcl_4.png)
@@ -160,7 +160,7 @@ After the implementation of the fpn_resnet model, the 3D bounding boxes from the
 
 
 ### Step 4
-In the last step the performance of the object detection is evaluated by computing the intersection-over-union between labels and detection and by calculating the precision and recall. The model is producing a precision of 0.95065 and a recall of 0.94444.
+In the last step the performance of the object detection is evaluated by computing the intersection-over-union of labels and detection and by calculating the precision and recall values. The model is producing a precision of 0.95065 and a recall of 0.94444.
 
 ![image](img/RecallIou.png)
 
